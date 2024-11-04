@@ -350,3 +350,11 @@ article .icon {
 .email-icon {
     height: 4rem;
 }
+
+
+/* FOOTER */
+footer {
+    height: 26vh;
+    margin-block: 1.6rem;
+    text-align: center;
+}
