@@ -24,6 +24,7 @@ html {
 }
 
 p {
+    font-size: 1.6rem;
     color: rgb(85, 85, 85);
 }
 
@@ -70,11 +71,122 @@ a:hover {
 .nav__logo {
     font-size: 2.8rem;
     font-weight: 300;
-    cursor: default;
+    cursor: pointer;
+}
+
+.nav__logo a {
+    color: black;
+    text-decoration: none;
 }
 
 
 /* Mobile Nav */
 #mobile-nav {
     display: none;
+}
+
+
+/* SECTION */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 16rem;
+    min-height: fit-content;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    height: 80vh;
+}
+
+/* .hero__content {
+    display: flex;
+    flex-direction: column;
+} */
+
+.hero__image {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.hero__content {
+    align-self: center;
+    text-align: center;
+}
+
+
+.hero__content p {
+    font-weight: 600;
+}
+
+
+.title {
+    font-size: 4.8rem;
+}
+
+.hero__content .title {
+    margin-block: 0.6rem;
+}
+
+.text {
+    font-size: 2.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+    gap: 1.6rem;
+}
+
+/* BUTTONS */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 1.6rem;
+    width: 12.8rem;
+    border-radius: 3.2rem;
+}
+
+.btn--primary,
+.btn--secondary {
+    border: 0.2rem solid rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+.btn--primary,
+.btn--secondary:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn--primary:hover {
+    background: black;
+}
+
+.btn--secondary {
+    background: none;
+}
+
+.btn--secondary:hover {
+    border: 0.2rem solid white;
+}
+
+
+
+
+/* ICONS */
+.icon {
+    cursor: pointer;
+    height: 3.2rem;
 }
