@@ -94,41 +94,34 @@ section {
     min-height: fit-content;
 }
 
-#hero {
-    display: flex;
-    justify-content: center;
-    gap: 8rem;
-    height: 80vh;
-}
-
-/* .hero__content {
-    display: flex;
-    flex-direction: column;
-} */
-
-.hero__image {
+.section__image {
     display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0;
 }
 
-.hero__content {
+
+
+/* UTILITIES */
+.container {
+    display: flex;
+}
+
+.content-wrapper {
     align-self: center;
     text-align: center;
 }
 
-
-.hero__content p {
+.content-wrapper p {
     font-weight: 600;
 }
-
 
 .title {
     font-size: 4.8rem;
 }
 
-.hero__content .title {
+.content-wrapper .title {
     margin-block: 0.6rem;
 }
 
@@ -137,12 +130,6 @@ section {
     margin-bottom: 1.6rem;
 }
 
-.social-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.6rem;
-    gap: 1.6rem;
-}
 
 /* BUTTONS */
 .btn-container {
@@ -183,10 +170,81 @@ section {
 }
 
 
-
-
 /* ICONS */
+.social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+    gap: 1.6rem;
+}
+
 .icon {
     cursor: pointer;
     height: 3.2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: 8rem;
+    bottom: 4rem;
+    opacity: 0.75;
+    transition: opacity 300ms ease;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+
+/* HERO */
+#hero {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    height: 80vh;
+}
+
+
+/* ABOUT SECTION */
+#about {
+    position: relative;
+}
+
+.about.container {
+    gap: 6.4rem;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__pic {
+    border-radius: 3.2rem;
+}
+
+
+.about__details-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about__details-wrapper .container {
+    margin-block: 3.2rem;
+    gap: 3.2rem;
+}
+
+.detail-container {
+    /* display: flex; */
+    background: white;
+    border-color: rgb(163, 163, 163);
+    border-radius: 3.2rem;
+    border: 0.2rem solid rgb(53, 53, 53);
+    flex: 1;
+    padding: 2.4rem;
+    text-align: center;
+}
+
+.detail-container h3 {
+    font-size: 2rem;
+    margin-block: 0.4rem;
 }
